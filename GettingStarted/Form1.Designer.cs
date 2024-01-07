@@ -33,13 +33,14 @@
             txtLastName = new TextBox();
             label1 = new Label();
             label2 = new Label();
+            btnExit = new Button();
             SuspendLayout();
             // 
             // btnSubmit
             // 
             btnSubmit.Location = new Point(36, 271);
             btnSubmit.Name = "btnSubmit";
-            btnSubmit.Size = new Size(94, 29);
+            btnSubmit.Size = new Size(116, 41);
             btnSubmit.TabIndex = 0;
             btnSubmit.Text = "Submit";
             btnSubmit.UseVisualStyleBackColor = true;
@@ -76,11 +77,22 @@
             label2.TabIndex = 4;
             label2.Text = "Last Name";
             // 
+            // btnExit
+            // 
+            btnExit.Location = new Point(234, 271);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(116, 44);
+            btnExit.TabIndex = 5;
+            btnExit.Text = "Exit";
+            btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(440, 450);
+            Controls.Add(btnExit);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(txtLastName);
@@ -99,5 +111,6 @@
         private TextBox txtLastName;
         private Label label1;
         private Label label2;
+        private Button btnExit;
     }
 }
