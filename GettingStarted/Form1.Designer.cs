@@ -34,6 +34,8 @@
             label1 = new Label();
             label2 = new Label();
             btnExit = new Button();
+            label3 = new Label();
+            label4 = new Label();
             SuspendLayout();
             // 
             // btnSubmit
@@ -88,11 +90,33 @@
             btnExit.UseVisualStyleBackColor = true;
             btnExit.Click += btnExit_Click;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.ForeColor = Color.Red;
+            label3.Location = new Point(265, 77);
+            label3.Name = "label3";
+            label3.Size = new Size(15, 20);
+            label3.TabIndex = 6;
+            label3.Text = "*";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.ForeColor = Color.Red;
+            label4.Location = new Point(265, 157);
+            label4.Name = "label4";
+            label4.Size = new Size(15, 20);
+            label4.TabIndex = 7;
+            label4.Text = "*";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(440, 450);
+            Controls.Add(label4);
+            Controls.Add(label3);
             Controls.Add(btnExit);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -113,5 +137,7 @@
         private Label label1;
         private Label label2;
         private Button btnExit;
+        private Label label3;
+        private Label label4;
     }
 }
