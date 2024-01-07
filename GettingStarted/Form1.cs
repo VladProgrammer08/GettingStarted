@@ -23,8 +23,27 @@ namespace GettingStarted
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-
-            MessageBox.Show($"Hello {txtFirstName.Text + " " + txtLastName.Text}, you submited successfully");
+            if (string.IsNullOrEmpty(txtFirstName.Text))
+            {
+                lblValidFName.Text = "Enter a valid First Name";
+            }
+            else
+            {
+                lblValidFName.Text = "*";
+            }
+            if (string.IsNullOrEmpty(txtLastName.Text))
+            {
+                lblValidLName.Text = "Enter a valid Last Name";
+            }
+            else
+            {
+                lblValidLName.Text = "*";
+            }
+            if (lblValidFName.Text == "*" && lblValidLName.Text == "*")
+            {
+                MessageBox.Show($"Hello {txtFirstName.Text + " " + txtLastName.Text}, you submited successfully");
+            }
+                    
         }
     }
 }
